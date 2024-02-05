@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vcall</title>
+    <script>
+        //render code on server
+        const ROOM_ID = '<%= roomId %>'
+
+    </script>
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<style>
+    #video-grid {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px solid black;
+        margin: 4em;
+
+    }
+
+
+    video {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        object-fit: cover;
+    }
+</style>
+
+<body style="background-color: antiquewhite;">
+    <div id="video-grid">
+
+    </div>
+</body>
+
+</html>
