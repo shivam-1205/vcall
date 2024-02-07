@@ -14,26 +14,17 @@
     <script src="/socket.io/socket.io.js" defer></script>
     <script src="script.js" defer></script>
 </head>
+
 <style>
     #video-grid {
         display: grid;
-        align-items: center;
-        justify-content: center;
-        border-radius: 4px solid black;
-        margin: 4em;
-
-    }
-
-
-    video {
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-        object-fit: cover;
+        grid-template-columns: repeat(auto-fill, 300px);
+        grid-auto-rows: 300px;
+        gap: 20px;
     }
 </style>
 
-<body style="background-color: antiquewhite;">
+<body>
     <div id="video-grid">
 
     </div>
